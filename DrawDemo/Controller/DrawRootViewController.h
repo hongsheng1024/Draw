@@ -10,4 +10,6 @@
 
 @interface DrawRootViewController : UIViewController
 
+@property(nonatomic, assign)NSInteger atIndex;
+
 @end

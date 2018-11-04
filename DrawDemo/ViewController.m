@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DrawRootViewController.h"
+#import "UIViewExt.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -21,13 +23,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _dataArrs = @[@"objc_msgSend发送消息", @"Runtime交换方法实现", @"动态添加方法",
-                  @"runtime取类的一些信息", @"关联对象给分类增加属性", @"KVC", @"KVO",
-                  @"Block介绍", @"WKWebView-协议拦截",@"WKWebView-WKScriptMessageHandler协议",
-                  @"WKWebView-WKUIDelegate协议",
-                  @"UIWebView-协议拦截",
-                  @"UIWebView-JavaScriptCore框架",
-                  @"UIWebView-JSExport协议"];
+    _dataArrs = @[@"drawRect:方法绘制两条直线",
+                  @"简化绘图方式",
+                  @"绘制矩形",
+                  @"绘制矩形（利用UIKit的封装方法）",
+                  @"绘制椭圆",
+                  @"绘制弧形",
+                  @"绘制贝塞尔曲线",
+                  @"绘制文字",
+                  @"图像绘制",
+                  @"颜色渐变-线性渐变",
+                  @"颜色渐变-径向渐变",
+                  @"渐变填充",
+                  @"叠加模式",
+                  @"有颜色填充模式",
+                  @"无颜色填充模式",
+                  @"上下文变换",
+                  @"使用Core Graphics绘制图像01反",
+                  @"使用Core Graphics绘制图像02正",
+                  @"利用位图上下文添加水印效果",
+                  @"绘制到PDF",
+                  @"滤镜特效"
+                  ];
     
     _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.dataSource = self;
@@ -52,8 +69,9 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
+    DrawRootViewController *drawRVC = [[DrawRootViewController alloc]init];
+    drawRVC.atIndex = indexPath.row;
+    [self.navigationController pushViewController:drawRVC animated:YES];
 }
 
 

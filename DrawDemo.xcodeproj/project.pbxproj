@@ -15,6 +15,11 @@
 		1F194ECD2189A62B001F911C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F194ECC2189A62B001F911C /* main.m */; };
 		1F194ED72189A69D001F911C /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F194ED62189A69D001F911C /* UIViewExt.m */; };
 		1F194EDA2189A6A8001F911C /* DrawRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F194ED92189A6A8001F911C /* DrawRootViewController.m */; };
+		1F286A52218D591000FBDD50 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F286A51218D591000FBDD50 /* DrawView.m */; };
+		1F286A58218D795300FBDD50 /* lili.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F286A57218D795300FBDD50 /* lili.png */; };
+		1F286A5A218EAEE800FBDD50 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1F286A59218EAEE800FBDD50 /* test.pdf */; };
+		1F286A5D218EAF7F00FBDD50 /* test01.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F286A5B218EAF7E00FBDD50 /* test01.png */; };
+		1F286A5E218EAF7F00FBDD50 /* test02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F286A5C218EAF7E00FBDD50 /* test02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,12 @@
 		1F194ED62189A69D001F911C /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		1F194ED82189A6A8001F911C /* DrawRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawRootViewController.h; sourceTree = "<group>"; };
 		1F194ED92189A6A8001F911C /* DrawRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawRootViewController.m; sourceTree = "<group>"; };
+		1F286A50218D591000FBDD50 /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		1F286A51218D591000FBDD50 /* DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		1F286A57218D795300FBDD50 /* lili.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lili.png; sourceTree = "<group>"; };
+		1F286A59218EAEE800FBDD50 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		1F286A5B218EAF7E00FBDD50 /* test01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test01.png; sourceTree = "<group>"; };
+		1F286A5C218EAF7E00FBDD50 /* test02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +80,9 @@
 				1F194EC02189A62B001F911C /* ViewController.h */,
 				1F194EC12189A62B001F911C /* ViewController.m */,
 				1F194ED32189A66B001F911C /* Controller */,
+				1F286A4F218D58F000FBDD50 /* View */,
 				1F194ED42189A66C001F911C /* Untils */,
+				1F286A53218D785300FBDD50 /* Resource */,
 				1F194EC32189A62B001F911C /* Main.storyboard */,
 				1F194EC62189A62B001F911C /* Assets.xcassets */,
 				1F194EC82189A62B001F911C /* LaunchScreen.storyboard */,
@@ -95,6 +108,34 @@
 				1F194ED62189A69D001F911C /* UIViewExt.m */,
 			);
 			path = Untils;
+			sourceTree = "<group>";
+		};
+		1F286A4F218D58F000FBDD50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F286A50218D591000FBDD50 /* DrawView.h */,
+				1F286A51218D591000FBDD50 /* DrawView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F286A53218D785300FBDD50 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1F286A54218D785300FBDD50 /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1F286A54218D785300FBDD50 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				1F286A59218EAEE800FBDD50 /* test.pdf */,
+				1F286A57218D795300FBDD50 /* lili.png */,
+				1F286A5B218EAF7E00FBDD50 /* test01.png */,
+				1F286A5C218EAF7E00FBDD50 /* test02.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F194ECA2189A62B001F911C /* LaunchScreen.storyboard in Resources */,
+				1F286A58218D795300FBDD50 /* lili.png in Resources */,
 				1F194EC72189A62B001F911C /* Assets.xcassets in Resources */,
 				1F194EC52189A62B001F911C /* Main.storyboard in Resources */,
+				1F286A5E218EAF7F00FBDD50 /* test02.png in Resources */,
+				1F286A5D218EAF7F00FBDD50 /* test01.png in Resources */,
+				1F286A5A218EAEE800FBDD50 /* test.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +215,7 @@
 			files = (
 				1F194ED72189A69D001F911C /* UIViewExt.m in Sources */,
 				1F194EC22189A62B001F911C /* ViewController.m in Sources */,
+				1F286A52218D591000FBDD50 /* DrawView.m in Sources */,
 				1F194ECD2189A62B001F911C /* main.m in Sources */,
 				1F194EBF2189A62B001F911C /* AppDelegate.m in Sources */,
 				1F194EDA2189A6A8001F911C /* DrawRootViewController.m in Sources */,
